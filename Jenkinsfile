@@ -20,7 +20,7 @@ pipeline {
         stage ("run docker container from newly created docker image") {
             steps {
                 sh 'echo "running docker containers..."'
-                sh 'docker run -it --name homepage -p 80:80 webpage:latest'
+                sh 'docker run -d --name homepage -p 80:80 webpage:latest'
             }
         }
 
