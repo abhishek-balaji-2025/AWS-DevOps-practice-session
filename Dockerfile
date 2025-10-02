@@ -2,7 +2,7 @@
 FROM nginx:latest
 
 # Copy the file from source to destination
-COPY ./homepage.html /var/www/nginx/html/
+COPY ./homepage.html /usr/share/nginx/html/index.html
 
 # Expose port 80
 EXPOSE 80
