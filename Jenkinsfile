@@ -27,7 +27,7 @@ pipeline {
         stage ("push the webpage.html to the s3 bucket") {
             steps {
                 sh 'echo "pushing image to aws s3 bucket"'
-                sh 'aws s3 cp s3://abhishek-s3-bucket-02-10-2025/'
+                sh 'aws s3 cp homepage.html s3://abhishek-s3-bucket-02-10-2025/'
             }
         }
     }
